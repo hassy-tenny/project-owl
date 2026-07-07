@@ -1,7 +1,13 @@
 document
-.getElementById("analyzeBtn")
-.addEventListener("click", () => {
+  .getElementById("analyzeBtn")
+  .addEventListener("click", async () => {
 
-    alert("🦉 Project Owl coming soon!");
+    const response = await fetch("http://127.0.0.1:8000/analyze");
+
+    const data = await response.json();
+
+    alert(
+      `🦉 Decision: ${data.decision}\n\nScore: ${data.score}\n\n${data.reason}`
+    );
 
 });
