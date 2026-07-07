@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Project Owl",
+  "version": "1.0",
+  "description": "Never regret another online purchase.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}
